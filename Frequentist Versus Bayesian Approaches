@@ -1,0 +1,29 @@
+Hannah Gura
+September 1st 2024
+
+Exercise #1: If someone gets a positive test, is it "statistically significant" at the p<0.05 level? Why or why not?
+
+sample = 1000 people
+False positive rate 5%
+no false negative rate
+World Health Organization estimated HIV prevalence 0.6% 
+
+True positives = 1000 * 6/1000 = 6 people
+False positives = 1000 * ((100-6)/100) *.05 = 47 people
+
+6/(6+47) = ~11%
+No, it is not statistically significant at the p<0.05 level. The accuracy of the test givent he low prevalence of HIV is ~11% accurate not 95% accurate.
+
+Exercise #2: What is the probability that if someone gets a positive test, that person is infected?
+P(Infected | Positive) = (P(Positive | Infected) * P(Infected))/P(Positive)
+
+.1
+.2
+.3
+.4
+.5
+.6
+.7
+.8
+.9
+.10
