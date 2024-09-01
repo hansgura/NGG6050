@@ -7,23 +7,48 @@ sample = 1000 people
 False positive rate 5%
 no false negative rate
 World Health Organization estimated HIV prevalence 0.6% 
+https://www.who.int/data/gho/data/themes/hiv-aids
 
 True positives = 1000 * 6/1000 = 6 people
 False positives = 1000 * ((100-6)/100) *.05 = 47 people
 
 6/(6+47) = ~11%
-No, it is not statistically significant at the p<0.05 level. The accuracy of the test givent he low prevalence of HIV is ~11% accurate not 95% accurate.
+No, it is not statistically significant at the p<0.05 level. 
+Only 11% of those that test positive actually have the condition and the error rate is higher than 5%.
+
+Also, can the tests accuracy be determined as statistically significant? Statistically significant isn't a term used in diagnostic testing. 
 
 Exercise #2: What is the probability that if someone gets a positive test, that person is infected?
-P(Infected | Positive) = (P(Positive | Infected) * P(Infected))/P(Positive)
+  p(Hypothesis|Data) = (p(Data|Hypothesis)*Hypothesis)/p(Data)
 
+  Hypothesis=person is infected Data= person tests positive
 .1
+   P(Data) = .95 * .1 +.05 = .145
+  P(Hypothesis|Data) = .1/.145 = .69
 .2
+  P(Data) = .95 * .2 + .05 = .24
+  P(Hypothesis|Data) = .2/.24= .833
 .3
+  P(Data) = .95 * .3 +.05 =.335
+  P(Hypothesis|Data) = .3/.335 = .896
 .4
+  P(Data) = .95 * .4 +.05 = .43
+  P(Hypothesis|Data) = .4/.43 = .93
 .5
+  P(Data) = .95 * .5 +.05 = .525
+  P(Hypothesis|Data) = .5/.525 = .952
 .6
+  P(Data) = .95 * .6 +.05 = .62
+  P(Hypothesis|Data) = .6/.62 = .968
 .7
+  P(Data) = .95 * .7 +.05 = .715
+  P(Hypothesis|Data) = .7/.715 = .979
 .8
+  P(Data) = .95 * .8 +.05 = .81
+  P(Hypothesis|Data) = .8/.81 = .988
 .9
+  P(Data) = .95 * .9 +.05 = .905
+  P(Hypothesis|Data) = .9/.905 = .994
 .10
+  P(Data) = .95 * 1 +.05 = 1
+  P(Hypothesis|Data) = 1/1 = 1
