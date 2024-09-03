@@ -16,39 +16,47 @@ False positives = 1000 * ((100-6)/100) *.05 = 47 people
 No, it is not statistically significant at the p<0.05 level. 
 Only 11% of those that test positive actually have the condition and the error rate is higher than 5%.
 
-Also, can the tests accuracy be determined as statistically significant? Statistically significant isn't a term used in diagnostic testing. 
+Also, an individual's test cannot be determined as statistically significant. The test can have statistically significant accuracy for a population, but not for an individual. 
 
 Exercise #2: What is the probability that if someone gets a positive test, that person is infected?
-  p(Hypothesis|Data) = (p(Data|Hypothesis)*Hypothesis)/p(Data)
+  p(Infected|Positive) = (p(Positive|Infected)*p(Infected))/P(Positive)
+  Infected=person is infected (hypothesis) Positive= person tests positive (data)
 
-  Hypothesis=person is infected Data= person tests positive
+P(Positive|Infected)= 1
+P(Positive | Not Infected) = .05
+P(Not Infected) = 1-P(Infected)
+
+P(Positive) = P(Infected)+.05 * .95
+0
+  P(Positive) = 0 +.05 *.95 = .48
+  P(Infected|Positive) = 0/.48 = 0
 .1
-   P(Data) = .95 * .1 +.05 = .145
-  P(Hypothesis|Data) = .1/.145 = .69
+  P(Positive) = .1 +.05 *.95 = .15
+  P(Infected|Positive) = .1/.15 = .67
 .2
-  P(Data) = .95 * .2 + .05 = .24
-  P(Hypothesis|Data) = .2/.24= .833
+  P(Positive) = .2 + .05 * .95= .25
+  P(Infected|Positive) = .2/.25 = .8
 .3
-  P(Data) = .95 * .3 +.05 =.335
-  P(Hypothesis|Data) = .3/.335 = .896
+  P(Positive) = .3 +.05 *.95  = .35
+  P(Infected|Positive) = .3/.35 = .85
 .4
-  P(Data) = .95 * .4 +.05 = .43
-  P(Hypothesis|Data) = .4/.43 = .93
+  P(Positive) = .4 +.05 *.95 = .45
+  P(Infected|Positive) = .4/.45 = .89
 .5
-  P(Data) = .95 * .5 +.05 = .525
-  P(Hypothesis|Data) = .5/.525 = .952
+  P(Positive) = .5 +.05 *.95 = .55
+  P(Infected|Positive) = .5/.55 = .91
 .6
-  P(Data) = .95 * .6 +.05 = .62
-  P(Hypothesis|Data) = .6/.62 = .968
+  P(Positive) = .6 +.05 * .95 = 65
+  P(Infected|Positive) = .6/.65 = .92
 .7
-  P(Data) = .95 * .7 +.05 = .715
-  P(Hypothesis|Data) = .7/.715 = .979
+  P(Positive) = .7 +.05 * .95 = .75
+  P(Infected|Positive) = .7/.75 = .93
 .8
-  P(Data) = .95 * .8 +.05 = .81
-  P(Hypothesis|Data) = .8/.81 = .988
+  P(Positive) = .8 +.05  * .95 = .85
+  P(Infected|Positive) = .8/.85 = .94
 .9
-  P(Data) = .95 * .9 +.05 = .905
-  P(Hypothesis|Data) = .9/.905 = .994
-.10
-  P(Data) = .95 * 1 +.05 = 1
-  P(Hypothesis|Data) = 1/1 = 1
+  P(Positive) = .9 +.05  * .95 = .95
+  P(Infected|Positive) = .9/.95 = .95
+1
+  P(Positive) = 1 +.05 * .95 = 1.05
+  P(Infected|Positive) = 1/1.05 = .95
